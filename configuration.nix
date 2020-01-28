@@ -28,9 +28,17 @@ in
     ];
   };
 
-  environment.systemPackages = with pkgs; [ vim clang-tools ];
+  environment.systemPackages = with pkgs; [ vim clang-tools git ];
 
   home-manager.users.chckyn = {
+
+    programs.git = {
+      enable = true;
+      userName  = "Charles Celerier";
+      userEmail = "cceleri@cs.stanford.edu";
+	  extraConfig = { core = { editor = "vim"; }; };
+    };
+
     programs.vim = {
       enable = true;
       plugins = [ "vim-airline" "vim-autoformat" ];

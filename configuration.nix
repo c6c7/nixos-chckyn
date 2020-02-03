@@ -36,16 +36,16 @@ in
       enable = true;
       userName  = "Charles Celerier";
       userEmail = "cceleri@cs.stanford.edu";
-	  extraConfig = { core = { editor = "vim"; }; };
+      extraConfig = { core = { editor = "vim"; }; };
     };
 
     programs.vim = {
       enable = true;
       plugins = [ "vim-airline" "vim-autoformat" ];
       settings = {
-	    ignorecase = true;
-		mouse = "a";
-	  };
+        ignorecase = true;
+        mouse = "a";
+      };
       extraConfig = ''
 let mapleader = " "
 " Open a netrw buffer in the directory containing the file in the current

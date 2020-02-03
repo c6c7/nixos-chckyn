@@ -32,6 +32,16 @@ in
 
   home-manager.users.chckyn = {
 
+    programs.ssh = {
+    enable = true;
+      matchBlocks = {
+        "github.com" = {
+          user = "git";
+          identityFile = "~/.ssh/github-chckyn";
+        };
+      };
+    };
+
     programs.git = {
       enable = true;
       userName  = "Charles Celerier";

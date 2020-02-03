@@ -35,6 +35,10 @@ in
     git
     gdb
     valgrind
+    man-db
+    man-pages
+    clang-manpages
+    posix_man_pages
   ];
 
   home-manager.users.chckyn = {

@@ -28,7 +28,12 @@ in
     ];
   };
 
-  environment.systemPackages = with pkgs; [ vim clang-tools git ];
+  environment.systemPackages = with pkgs;
+  [
+    vim
+    clang-tools
+    git
+  ];
 
   home-manager.users.chckyn = {
 

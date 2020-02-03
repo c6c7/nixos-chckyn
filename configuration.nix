@@ -33,6 +33,8 @@ in
     vim
     clang-tools
     git
+    gdb
+    valgrind
   ];
 
   home-manager.users.chckyn = {
